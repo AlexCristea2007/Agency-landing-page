@@ -1,0 +1,56 @@
+:root {
+   /* Primary Colors */
+   --softRed: hsl(7, 99%, 70%);
+   --yellow: hsl(51, 100%, 49%);
+   --darkDesaturatedCyan: hsl(167, 40%, 24%);
+   --darkBlue: hsl(198, 62%, 26%);
+   --darkModerateCyan: hsl(168, 34%, 41%);
+   /* Neutral Colors */
+   --veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+   --veryDarkGrayishBlue: hsl(213, 9%, 39%);
+   --darkGrayishBlue: hsl(232, 10%, 55%);
+   --grayishBlue: hsl(210, 4%, 67%);
+   --white: hsl(0, 0%, 100%);
+   /* Font */
+   --fs-s: 22.5px;
+   --fs-l: 32.5px;
+   --ffBarlow: "Barlow", sans-serif;
+   --fwBarlow: 600;
+   --ffFrances:  "Fraunces", serif;
+   --fw1Frances: 700;
+   --fw2Frances: 900;
+}
+
+*::before,
+*,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    height: 100vh;
+}
+
+.body-wrapper {
+    width: 100%;
+}
+
+[class*="titleB"] {
+    font-family: var(--ffFrances);
+    font-weight: var(--fw2Frances);
+    font-size: var(--fs-l);
+}
+
+[class*="titleS"] {
+    font-family: var(--ffFrances);
+    font-weight: var(--fw1Frances);
+    font-size: var(--fs-s);
+}
+
+[class*="small"] {
+    font-family: var(--ffBarlow);
+    font-weight: 500;
+    font-size: 15px;
+}

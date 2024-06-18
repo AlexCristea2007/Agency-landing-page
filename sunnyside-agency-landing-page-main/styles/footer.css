@@ -1,0 +1,72 @@
+@import url(constants.css);
+
+.footer-container {
+    width: 100%;
+    padding: 65px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: hsl(168, 34%, 78%);
+}
+
+.footer-container .logo-titleS {
+    color: var(--darkDesaturatedCyan);
+}
+
+.options-list {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.options-list a {
+    text-decoration: none;
+    color: var(--darkModerateCyan);
+}
+.options-list a:hover {
+    color: var(--white);
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media a svg {
+    fill: var(--darkModerateCyan);
+}
+.social-media a svg:hover {
+    fill: var(--white);
+}
+
+.attribution {
+    background-color: hsl(168, 34%, 78%);
+    font-size: 20px !important;
+    padding-bottom: 30px;
+}
+
+.attribution a:hover {
+    color: var(--darkDesaturatedCyan);
+}
+
+@media screen and (max-width:900px) {
+    .attribution {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px !important;
+    }
+}

@@ -1,0 +1,224 @@
+@import url(constants.css);
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--white);
+}
+
+.about-section {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    grid-template-areas: 
+        "transform-desc transform-img"
+        "stand-out-img stand-out-desc"
+        "fruit1 fruit2";
+    gap: 0;
+    box-sizing: border-box;
+}
+
+.about-section article {
+    width: 100%;
+    max-width: 100%;
+}
+
+.about-section article img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-desc1 {
+    grid-area: transform-desc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    padding: 0 60px;
+}
+.product-img1 {
+    grid-area: transform-img;
+}
+.product-desc2 {
+    grid-area: stand-out-desc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    padding: 0 60px;
+}
+.product-img2 {
+    grid-area: stand-out-img;
+}
+.product-img-desc1 {
+    grid-area: fruit1;
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+}
+
+.product-img-desc2 {
+    grid-area: fruit2;
+    background-image: url(/images/desktop/image-photography.jpg);
+}
+
+[class*="product-img"] {
+    background-size: cover;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+[class*="titleS"] {
+    color: var(--darkGrayishBlue);
+}
+
+.product-btn {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--veryDarkDesaturatedBlue);
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+    cursor: pointer;
+}
+
+.text-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    position: absolute;
+    bottom: 15%;
+}
+
+@media screen and (max-width:900px) {
+    .about-section {
+        width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(6, 1fr); 
+    grid-template-areas: 
+        "transform-desc" 
+        "transform-img"
+        "stand-out-desc"
+        "stand-out-img"
+        "fruit1" 
+        "fruit2";
+    gap: 0;
+    box-sizing: border-box;
+    }
+}
+
+.clients-container {
+    width: 100%;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    background-color: var(--white);
+}
+
+.clients-titleS {
+    text-align: center;
+    color: var(--darkGrayishBlue);
+}
+
+.clients-list {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5%;
+}
+
+.clients-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.clients-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.clients-small {
+    text-align: center;
+    width: 95%;
+    color: var(--veryDarkGrayishBlue);
+}
+
+.clients-profession {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.clients-profession cite {
+    color: var(--veryDarkDesaturatedBlue);
+}
+.clients-profession p {
+    color: var(--grayishBlue);
+}
+
+@media screen and (max-width:900px) {
+    .clients-list {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4.5rem;
+    }
+}
+
+.image-gallery {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width:900px) {
+    .image-gallery {
+      width: 100%;
+      display: grid;
+      grid-auto-flow: row;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+        "1 2"
+        "3 4";
+    }
+}
+
